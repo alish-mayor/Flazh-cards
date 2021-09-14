@@ -3,6 +3,7 @@ const mainContent = document.querySelector(".main__content");
 const originalInput = document.querySelector(".original-input");
 const translateInput = document.querySelector(".translate-input");
 const form = document.querySelector("form");
+const cancelBtn = document.querySelector(".cancel-btn");
 
 const openModal = function () {
   document.querySelector(".add-form").classList.remove("hidden");
@@ -85,6 +86,8 @@ form.addEventListener("submit", (e) => {
 });
 
 openAddCard.addEventListener("click", openModal);
+
+cancelBtn.addEventListener("click", closeModal);
 
 const cards = JSON.parse(localStorage.getItem("cards"));
 
