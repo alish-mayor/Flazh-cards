@@ -28,7 +28,7 @@ body {
 }
 
 .header {
-  border-bottom: 1px solid rgb(145, 145, 145);
+  border-bottom: 1px solid var(--primary);
 }
 
 .header__content {
@@ -67,7 +67,7 @@ h1 {
 
 .flash-card {
   width: 30rem;
-  height: 25rem;
+  height: 20rem;
   border: 1px solid var(--primary);
   margin-bottom: 3rem;
   border-radius: 0.5rem;
@@ -82,8 +82,7 @@ h1 {
   transform: scale(1.05);
 }
 
-.flash-card::after {
-  content: "Something";
+.flash-card_translated {
   position: absolute;
   top: 0;
   left: 0;
@@ -96,6 +95,10 @@ h1 {
   align-items: center;
   justify-content: center;
   visibility: hidden;
+}
+
+.flash-card_translated.visible {
+  visibility: visible;
 }
 
 .card__title {
