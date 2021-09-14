@@ -79,10 +79,6 @@ h1 {
   position: relative;
 }
 
-.flash-card:hover {
-  transform: scale(1.05);
-}
-
 .flash-card_translated {
   position: absolute;
   top: 0;
