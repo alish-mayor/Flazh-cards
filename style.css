@@ -16,6 +16,7 @@
 body {
   font-family: "Roboto", sans-serif;
   color: #1d1d1d;
+  position: relative;
 }
 
 .container {
@@ -36,7 +37,7 @@ body {
   justify-content: space-between;
 }
 
-.header__add-btn {
+.add-btn {
   font-family: inherit;
   color: var(--primary);
   font-size: 2rem;
@@ -44,9 +45,126 @@ body {
   background-color: transparent;
   border: 1px solid var(--primary);
   border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.add-btn:hover {
+  color: #ffffff;
+  background-color: var(--primary);
 }
 
 h1 {
   font-size: 3rem;
   color: var(--primary);
+}
+
+.main__content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.flash-card {
+  width: 30rem;
+  height: 25rem;
+  border: 1px solid var(--primary);
+  margin-bottom: 3rem;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.flash-card:hover {
+  transform: scale(1.05);
+}
+
+.flash-card::after {
+  content: "Something";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--primary);
+  color: #ffffff;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+}
+
+.card__title {
+  font-size: 2rem;
+  color: var(--primary);
+  margin-bottom: 3rem;
+}
+
+.card__text {
+  font-size: 2rem;
+}
+
+.delete-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-family: inherit;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  background-color: transparent;
+  border: 1px solid var(--primary);
+  border-radius: 0.5rem;
+  background-color: var(--primary);
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  color: var(--primary);
+  background-color: #ffffff;
+}
+
+.add-form {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hidden {
+  display: none;
+}
+
+form {
+  background-color: #ffffff;
+  padding: 2rem 4rem;
+  text-align: center;
+  border-radius: 0.5rem;
+}
+
+.input-item {
+  margin-bottom: 2rem;
+}
+
+.input-item label {
+  display: block;
+  text-align: left;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.input-item input {
+  font-size: 2rem;
+  border: 1px solid var(--primary);
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
 }

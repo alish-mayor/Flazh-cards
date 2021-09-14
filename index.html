@@ -13,7 +13,7 @@
             <div class="wrapper">
                 <div class="header__content">
                     <h1 class="header__logo">Flash Cards</h1>
-                    <button class="header__add-btn">Add card</button>
+                    <button class="add-btn">Add card</button>
                 </div>
             </div>
         </div>
@@ -22,13 +22,31 @@
         <div class="container">
             <div class="wrapper">
                 <div class="main__content">
-                    <div class="flash-card">
-                        
-                    </div>
+                    <!-- <div class="flash-card">
+                        <h2 class="card__title">Original word</h2>
+                        <p class="card__text">Some text</p>
+                        <button class="delete-btn">Delete card</button>
+                    </div> -->
                 </div>
             </div>
         </div>
     </main>
+
+    <div class="add-form hidden">
+        <form action="#">
+            <h2 class="card__title">Add card</h2>
+            <div class="input-item">
+                <label for="original">Original word</label>
+                <input type="text" name="original" required="true" />
+            </div>
+
+            <div class="input-item">
+                <label for="original">Translated word</label>
+                <input type="text" name="translate" required="true" />
+            </div>
+            <button class="add-btn submit">Submit</button>
+        </form>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
