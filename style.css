@@ -10,13 +10,15 @@
 
 :root {
   font-size: 10px;
-  --primary: rgb(255, 176, 57);
+  --primary: rgb(162, 63, 219);
+  --secondary: #ffffff;
 }
 
 body {
   font-family: "Roboto", sans-serif;
   color: #1d1d1d;
   position: relative;
+  background-color: rgb(48, 44, 44);
 }
 
 .container {
@@ -30,6 +32,7 @@ body {
 
 .header {
   border-bottom: 2px solid var(--primary);
+  background-color: rgb(37, 35, 35);
 }
 
 .header__content {
@@ -50,7 +53,7 @@ body {
 }
 
 .add-btn:hover {
-  color: #ffffff;
+  color: var(--secondary);
   background-color: var(--primary);
 }
 
@@ -86,7 +89,7 @@ h1 {
   right: 0;
   bottom: 0;
   background-color: var(--primary);
-  color: #ffffff;
+  color: var(--secondary);
   font-size: 2rem;
   display: flex;
   align-items: center;
@@ -106,6 +109,7 @@ h1 {
 
 .card__text {
   font-size: 2rem;
+  color: var(--secondary);
 }
 
 .delete-btn {
@@ -119,13 +123,13 @@ h1 {
   border: 1px solid var(--primary);
   border-radius: 0.5rem;
   background-color: var(--primary);
-  color: #ffffff;
+  color: var(--secondary);
   cursor: pointer;
 }
 
 .delete-btn:hover {
   color: var(--primary);
-  background-color: #ffffff;
+  background-color: var(--secondary);
 }
 
 .add-form {
@@ -148,7 +152,7 @@ h1 {
   position: absolute;
   top: 2rem;
   right: 2rem;
-  background-color: #ffffff;
+  background-color: var(--secondary);
   cursor: pointer;
 }
 
@@ -157,7 +161,7 @@ h1 {
 }
 
 form {
-  background-color: #ffffff;
+  background-color: var(--secondary);
   padding: 2rem 3rem;
   text-align: center;
   border-radius: 0.5rem;
